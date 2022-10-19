@@ -1,4 +1,4 @@
-package com.portfolio.JF;
+package com.portfolio.jf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

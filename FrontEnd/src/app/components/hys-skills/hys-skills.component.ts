@@ -13,4 +13,3 @@ export class HysSkillsComponent implements OnInit {
   }
 
 }
-

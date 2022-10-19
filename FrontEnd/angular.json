@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MiPortfolio_JF": {
+    "MiPorfolio_JacobFacundo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mi-portfolio-jf",
+            "outputPath": "dist/mi-porfolio-jacob-facundo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "MiPortfolio_JF:build:production"
+              "browserTarget": "MiPorfolio_JacobFacundo:build:production"
             },
             "development": {
-              "browserTarget": "MiPortfolio_JF:build:development"
+              "browserTarget": "MiPorfolio_JacobFacundo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MiPortfolio_JF:build"
+            "browserTarget": "MiPorfolio_JacobFacundo:build"
           }
         },
         "test": {
@@ -102,6 +102,6 @@
     }
   },
   "cli": {
-    "analytics": "079d00e7-74d9-4ffe-bcd5-d5df76be4935"
+    "analytics": "054b1dc7-bb31-409b-a88b-04d2c3975b2a"
   }
 }
