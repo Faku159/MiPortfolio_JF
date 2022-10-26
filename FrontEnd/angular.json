@@ -3,9 +3,13 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MiPorfolio_JacobFacundo": {
+    "proyectoFinal": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mi-porfolio-jacob-facundo",
+            "outputPath": "dist/proyecto-final",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,8 +27,8 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.js"
@@ -67,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "MiPorfolio_JacobFacundo:build:production"
+              "browserTarget": "proyectoFinal:build:production"
             },
             "development": {
-              "browserTarget": "MiPorfolio_JacobFacundo:build:development"
+              "browserTarget": "proyectoFinal:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MiPorfolio_JacobFacundo:build"
+            "browserTarget": "proyectoFinal:build"
           }
         },
         "test": {
@@ -93,6 +97,7 @@
               "src/assets"
             ],
             "styles": [
+              "../node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
