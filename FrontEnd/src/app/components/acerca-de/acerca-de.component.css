@@ -3,7 +3,6 @@
 }
 div{
     background-color:#012340;
-    ;
     text-align: center;
 }
  
@@ -17,13 +16,16 @@ div{
 /*estilo foto de perfil*/
 @media(min-width: 576px){
     #fotoDePerfil{
-        position: absolute;
-        width: 15%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px #f2ceae;
-        left: 3%;
-        top: 550px;
     }
+
+    .descripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 @media(max-width: 576px){
     #fotoDePerfil{
